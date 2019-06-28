@@ -1,0 +1,33 @@
+.column {
+    /*this is the global style applied to all devices in the absence of overrides styles*/
+    float: left;
+    height: 50px;
+    
+    /*mobile only*/
+    width: 100%;
+    background-color: #000;
+    margin: 10px 0;
+}
+
+@media (min-width: 992px) {
+    /* This sets the override style for anything beyond 992 pixels
+    Note it doesn't need to replicate wisth or margin setting because 
+    these are applied by default beyond 768 pixels*/
+    /* styles for desktops*/
+    /* it overrides bg only*/
+    .column {
+        background-color: #0997d3; /*blue*/
+    }
+    
+}
+@media (min-width: 768px) {
+    /* This sets the override style for anything beyond 768 pixels*/
+    /* it overrides default width, margin & bg and everything set by 992 breakpoint */
+    /* styles for tablets*/
+    .column {
+        background-color: #e84160; /*red*/
+        width: 30%;
+        margin: 10px;
+    }
+}
+

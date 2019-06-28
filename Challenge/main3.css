@@ -1,0 +1,20 @@
+.column {
+    
+    float: left;
+    height: 50px;
+    
+    /*mobile & tablet style*/
+    width: 100%;
+    background-color: #000; /*black*/
+    margin:10px 0px 10px; /*removes left & right margins*/
+}
+
+@media (min-width: 992px) {
+    /*desktop style*/
+    .column {
+        width: 30%;
+        background-color: green;
+        margin: 10px;
+    }
+    
+}
